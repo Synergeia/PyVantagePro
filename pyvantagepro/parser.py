@@ -129,9 +129,9 @@ class LoopDataParserRevB(DataParser):
     real-time data that can be read from the Davis VantagePro2.'''
     # Loop data format (RevB)
     LOOP_FORMAT = (
-        ('LOO', '3s'), ('BarTrend', 'B'), ('PacketType', 'B'),
+        ('LOO', '3s'), ('BarTrend', 'b'), ('PacketType', 'B'),
         ('NextRec', 'H'), ('Barometer', 'H'), ('TempIn', 'H'),
-        ('HumIn', 'B'), ('TempOut', 'H'), ('WindSpeed', 'B'),
+        ('HumIn', 'B'), ('TempOut', 'h'), ('WindSpeed', 'B'),
         ('WindSpeed10Min', 'B'), ('WindDir', 'H'), ('ExtraTemps', '7s'),
         ('SoilTemps', '4s'), ('LeafTemps', '4s'), ('HumOut', 'B'),
         ('HumExtra', '7s'), ('RainRate', 'H'), ('UV', 'B'),
